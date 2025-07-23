@@ -1,0 +1,48 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Navbar Styles */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .nav-links{
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
+
+ .nav-links li a{
+    text-decoration: none;
+    color: #8987A1;
+    font-weight: 500;
+}
+
+.navbar .home-bold{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #252432;
+}
+
+@media (max-width: 768px) {
+  li {
+    display: none; /* hide nav links */
+  }
+
+  .navbar {
+    padding: 10px 10px;
+  }
+
+  .logo img {
+    width: 80px; /* responsive logo size */
+  }
+}
