@@ -3,26 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ph-second-assignment</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/bf957ba0f5.js"
       crossorigin="anonymous"
     ></script>
-    <title>ph-second-assignment</title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- Navbar Start -->
     <header class="container">
       <nav class="navbar">
         <div class="logo">
@@ -30,21 +32,27 @@
         </div>
 
         <ul class="nav-links">
-          <li><a href="#" class="home-bold">Home</a></li>
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#">About Us</a></li>
-          <span><i class="fa-solid fa-cart-shopping"></i> Cart($56)</span>
         </ul>
+
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Cart ($56)</span>
+        </div>
       </nav>
     </header>
+    <!-- Navbar End -->
+
     <main>
       <!-- Banner Section Start -->
-
       <section class="banner container">
         <div class="banner-content">
-          <h1 class="banner-title">ALWAYS <span class="span1">FRESH</span> 
-            <br>
-             <span class="span2">FLOWERS</span></h1>
+          <h1 class="banner-title">
+            ALWAYS <span class="highlight-orange">FRESH</span><br />
+            <span class="highlight-orange">FLOWERS</span>
+          </h1>
           <p class="banner-description">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
@@ -55,7 +63,101 @@
           <img src="assets/hero-flower.png" alt="hero-flower" />
         </div>
       </section>
+      <!-- Banner Section End -->
+
+      <!-- Plant Section Start -->
+      <section class="plants container">
+        <div class="plants-header">
+          <h2>Our <span class="highlight-orange">Plants</span></h2>
+          <p>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </p>
+        </div>
+
+        <div class="plant-grid">
+          <!-- Repeatable Card -->
+          <div class="plant-card">
+            <img src="assets/sample-flower-image.png" alt="flower" />
+            <h3>Lily Blossom</h3>
+            <h4>20 USD</h4>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="plant-card">
+            <img src="assets/sample-flower-image.png" alt="flower" />
+            <h3>Lily Blossom</h3>
+            <h4>20 USD</h4>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="plant-card">
+            <img src="assets/sample-flower-image.png" alt="flower" />
+            <h3>Lily Blossom</h3>
+            <h4>20 USD</h4>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="plant-card">
+            <img src="assets/sample-flower-image.png" alt="flower" />
+            <h3>Lily Blossom</h3>
+            <h4>20 USD</h4>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="plant-card">
+            <img src="assets/sample-flower-image.png" alt="flower" />
+            <h3>Lily Blossom</h3>
+            <h4>20 USD</h4>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="plant-card">
+            <img src="assets/sample-flower-image.png" alt="flower" />
+            <h3>Lily Blossom</h3>
+            <h4>20 USD</h4>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="plant-card">
+            <img src="assets/sample-flower-image.png" alt="flower" />
+            <h3>Lily Blossom</h3>
+            <h4>20 USD</h4>
+            <button>ADD TO CART</button>
+          </div>
+          <div class="plant-card">
+            <img src="assets/sample-flower-image.png" alt="flower" />
+            <h3>Lily Blossom</h3>
+            <h4>20 USD</h4>
+            <button>ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+      <!-- Plant Section End -->
+
+      <section class="badge-section container">
+        <div class="badge-section-img">
+          <img src="assets/flower-store.png" alt="flower-store" />
+          <img class="img2" src="assets/trusted-badge.png" alt="">
+        </div>
+        <div class="badge-section-content">
+          <h2>Flower & Plants Lover</h2>
+          <ul>
+            <li>
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+            <li>
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+            <li>
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+
     <footer></footer>
   </body>
 </html>

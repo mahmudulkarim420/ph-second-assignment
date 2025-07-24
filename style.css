@@ -1,84 +1,247 @@
-body{
-    font-family: 'Inter', sans-serif;
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f8fd;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Navbar Styles */
-
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
- .nav-links{
-    display: flex;
-    gap: 48px;
-    list-style: none;
-}
-
- .nav-links li a{
-    text-decoration: none;
-    color: #8987A1;
-    font-weight: 500;
-}
-
-.navbar .home-bold{
-    font-weight: bold;
-    font-size: 1rem;
-    color: #252432;
-}
-
-
-/* Banner Section Styles */
-
-.banner{
+/* Navbar */
+.navbar {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
-.banner-content{
-  font-family: 'Noto Serif', sans-serif;
-  margin-top: 120px;
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin-left: 600px;
 }
 
-.banner-content .banner-title{
-  font-size: 4.25rem;
+.nav-links li a {
+  text-decoration: none;
+  color: #8987A1;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #e95a08;
+}
+
+.nav-links .active {
   font-weight: bold;
+  color: #252432;
 }
 
-.banner-content .span1, .span2{
-  color: #E95A08;
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #252432;
 }
 
-.banner-content .banner-description{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 1.25rem;
+/* Banner Section */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 100px;
+  gap: 40px;
+}
+
+.banner-content {
+  font-family: 'Noto Serif', serif;
   max-width: 570px;
 }
 
-
-
-.banner img{
-  width: 100%;
-  margin-left: 155px;
+.banner-title {
+  font-size: 4.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #252432;
 }
 
+.highlight-orange {
+  color: #E95A08;
+}
+
+.banner-description {
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.banner-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Plant Section */
+.plants {
+  margin-top: 100px;
+}
+
+.plants-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.plants-header h2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #252432;
+}
+
+.plants-header span {
+  color: #E95A08;
+}
+
+.plants-header p {
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 20px auto 0;
+}
+
+.plant-card{
+  text-align: center;
+  max-width: 270px;
+
+}
+
+.plant-card h3{
+  color: #252432;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+
+.plant-card h4{
+  color: #252432;
+  font-size: 1.25rem;
+  font-size: bold;
+}
+
+.plant-card button{
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+}
+
+.plant-card img{
+  width: 100%;
+}
+
+.plant-grid{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Badge Section Styles */
+
+.badge-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 200px;
+}
+
+.badge-section-img{
+  width: 100%;
+}
+
+.img2{
+  max-width: 250px;
+  position: relative;
+  bottom: 700px;
+  left: 380px;
+  filter: drop-shadow(1px 1px 20px rgba(0, 0, 0, 0.5));
+}
+
+.badge-section-content{
+  max-width: 540px;
+  margin-bottom: 300px;
+}
+
+.badge-section-content h2{
+  font-family: 'Noto Serif', sans-serif;
+  color: #252432;
+  font-size: 3.15rem;
+  font-weight: bold;
+}
+
+.badge-section-content ul li{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+
+/* Responsive */
 @media (max-width: 768px) {
-  li {
-    display: none; /* hide nav links */
-  }
 
   .navbar {
-    padding: 10px 10px;
+    display: flex;
   }
 
-  .logo img {
-    width: 80px; /* responsive logo size */
+  .nav-links {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+  }
+
+  .plants-header{
+    justify-items: center;
+  }
+
+  .plants-header p {
+    width: 100%;
+  }
+
+  .plant-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .plant-card{
+    width: 100%;
+    max-width: 160px;
+  }
+
+  .badge-section{
+    flex-direction: column;
+  }
+
+  .badge-section-img{
+    width: 100%;
+  }
+
+  .img2{
+    display: none;
   }
 }
