@@ -52,7 +52,7 @@ body {
   color: #252432;
 }
 
-/* Banner Section */
+/* Banner Section Styles*/
 .banner {
   display: flex;
   justify-content: space-between;
@@ -88,7 +88,7 @@ body {
   height: auto;
 }
 
-/* Plant Section */
+/* Plant Section Styles*/
 .plants {
   margin-top: 100px;
 }
@@ -321,7 +321,7 @@ body {
 /* Input Section Styles */
 
 .input-section{
-   background-image: url('assets/news-letter-bg.png'); /* Replace with your image path */
+   background-image: url('assets/news-letter-bg.png');
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -331,7 +331,6 @@ body {
   align-items: center;
   margin-top: 120px;
 }
-
 
 
 .title h1{
@@ -371,11 +370,11 @@ body {
 
 .footer-container{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.footer-left {
+.footer-left{
   max-width: 400px;
   margin-right: 200px;
   margin-top: 50px;
@@ -384,13 +383,13 @@ body {
 
 .footer-left p{
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 .footer-bottom{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px 50px;
+  gap: 15px 30px;
   margin-right: 300px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -402,15 +401,14 @@ body {
 }
 
 .footer-right{
-  margin-bottom: 120px;
-
+  margin-bottom: 60px;
 }
 
 .footer-right img{
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
-/* Responsive */
+/* Responsive Styles*/
 @media (max-width: 768px) {
   .navbar {
     display: flex;
@@ -452,24 +450,79 @@ body {
   }
 
   .badge-section-img {
-    width: 100%;
+    width: auto;
+    height: auto;
   }
 
   .badge {
     display: none;
   }
 
-  .deals-section-header {
-    justify-items: center;
+  .deals-card-container {
+    flex-direction: column;
+    height: auto;
+    padding: 0 16px;
   }
 
-  .input-form {
-    flex-direction: column;
-    justify-items: center;
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .big-card {
+    height: auto;
+  }
+
+  .card img,
+  .big-card img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-text p {
+    font-size: 1rem;
+  }
+
+  .big-card-text p {
+    font-size: 1.5rem;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .input-form input[type="email"],
   .input-form button {
-    width: 50%;
+     width: 100%;
+     margin: 10px 20px;
+  } 
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+    
+  }
+
+  .footer-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 150px;
   }
 }
