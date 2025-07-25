@@ -172,6 +172,16 @@ body {
   bottom: 700px;
   left: 380px;
   filter: drop-shadow(1px 1px 20px rgba(0, 0, 0, 0.5));
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .badge-section-content {
